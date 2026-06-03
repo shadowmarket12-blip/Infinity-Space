@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import bgImage from "../../assets/home page showcase background image.png";
 import promoVideo from "../../assets/v1.mp4";
 import { Link } from "react-router-dom";
+import PromoVideoSection from "./PromoVideo";
 
 export default function PromoVideoSection() {
   return (
