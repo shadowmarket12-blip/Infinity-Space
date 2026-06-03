@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import TrustMetricsSection from "./Trustmatics";
 import InteriorScrollSection from "./ScrollTrust";
-import PromoVideoSection from "./promovideo";
+import PromoVideoSection from "./Promovideo";
 import InteriorServicesSection from "./HomeService";
 import InteriorProcessSection from "./Process";
 import TestimonialsSection from "./WhatClient";
