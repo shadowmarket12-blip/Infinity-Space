@@ -46,7 +46,7 @@ export default function HomeBanner() {
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           disablePictureInPicture
           controls={false}
           className="absolute inset-0 h-full w-full object-cover"

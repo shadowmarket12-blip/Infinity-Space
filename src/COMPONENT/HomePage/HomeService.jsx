@@ -236,6 +236,7 @@ export default function InteriorServicesSection() {
                 {/* IMAGE */}
 
                 <img
+                  loading="lazy"
                   src={service.image}
                   alt={service.title}
                   className="

@@ -52,6 +52,7 @@ export default function ProcessDesignOne() {
 
       <div className="absolute inset-0">
         <img
+          loading="lazy"
           src={processBg}
           alt="Process Background"
           className="h-full w-full object-cover"

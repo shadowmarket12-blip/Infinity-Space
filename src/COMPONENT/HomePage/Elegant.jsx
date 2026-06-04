@@ -303,6 +303,7 @@ export default function ElegantHome() {
 
               <div className="overflow-hidden rounded-[26px]">
                 <img
+                  loading="lazy"
                   src={stepImage}
                   alt="Interior Design"
                   className="

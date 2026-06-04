@@ -14,7 +14,9 @@ export default function AboutHeroSection() {
         <img
           src={bgImage}
           alt="About Background"
+          // loading="lazy"
           className="h-full w-full object-cover"
+          loading="lazy"
         />
 
         {/* OVERLAY */}

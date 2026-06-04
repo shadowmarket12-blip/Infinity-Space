@@ -150,6 +150,7 @@ export default function ServicesShowcase() {
             >
               {/* Image */}
               <motion.img
+                loading="lazy"
                 src={card.image}
                 alt={card.title}
                 className="absolute inset-0 h-full w-full object-cover"

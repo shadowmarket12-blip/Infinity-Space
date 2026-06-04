@@ -14,6 +14,7 @@ export default function PromoVideoSection() {
           src={bgImage}
           alt="Interior Designers in Bhubaneswar"
           className="h-full w-full object-cover"
+          loading="lazy"
         />
 
         {/* DARK OVERLAY */}
@@ -244,6 +245,7 @@ export default function PromoVideoSection() {
               loop
               playsInline
               controls
+              preload="metadata"
               className="
                 relative
                 z-10

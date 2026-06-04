@@ -286,6 +286,7 @@ export default function MyService() {
                   {/* IMAGE */}
 
                   <img
+                    loading="lazy"
                     src={service.image}
                     // alt={service.why}
                     className="
