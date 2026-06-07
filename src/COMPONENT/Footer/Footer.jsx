@@ -182,7 +182,7 @@ export default function Footer() {
             <div className="mt-5 space-y-3 text-sm text-white/80">
               <p>Barabhuja market complex, FA 1/63, Khandagiri, </p>
 
-              <p>Bhubaneswar,Odisha 751003</p>
+              <p>Bhubaneswar,Odisha 751030</p>
 
               <p>infinityspaceodisha@gmail.com</p>
 

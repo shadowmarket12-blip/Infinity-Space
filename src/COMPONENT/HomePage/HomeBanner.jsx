@@ -1,40 +1,51 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Volume2, VolumeX } from "lucide-react";
 import video1 from "../../assets/carosuel video.mp4";
 
 export default function HomeBanner() {
   const videoRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
 
-    if (video) {
-      video.loop = true;
+    if (!video) return;
 
-      const playVideo = async () => {
-        try {
-          await video.play();
-        } catch (err) {
-          console.log("Autoplay blocked:", err);
-        }
-      };
+    video.loop = true;
+    video.muted = true;
+    video.volume = 1;
 
-      playVideo();
+    const playVideo = async () => {
+      try {
+        await video.play();
+      } catch (err) {
+        console.log("Autoplay blocked:", err);
+      }
+    };
 
-      const enableSound = () => {
-        video.muted = false;
-        video.volume = 1;
-        video.play();
-      };
-
-      document.addEventListener("click", enableSound, { once: true });
-
-      return () => {
-        document.removeEventListener("click", enableSound);
-      };
-    }
+    playVideo();
   }, []);
+
+  const toggleSound = async () => {
+    const video = videoRef.current;
+
+    if (!video) return;
+
+    try {
+      video.muted = !video.muted;
+
+      if (!video.muted) {
+        video.volume = 1;
+        await video.play();
+      }
+
+      setIsMuted(video.muted);
+    } catch (error) {
+      console.log("Audio playback failed:", error);
+    }
+  };
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -46,12 +57,13 @@ export default function HomeBanner() {
           loop
           muted
           playsInline
-          preload="metadata"
+          preload="auto"
           disablePictureInPicture
           controls={false}
           className="absolute inset-0 h-full w-full object-cover"
         >
           <source src={video1} type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
 
         <div className="absolute inset-0 bg-black/50" />
@@ -89,14 +101,14 @@ export default function HomeBanner() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-3xl font-black leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
+            className="text-2xl font-black leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
           >
             Interior Designers in Bhubaneswar Creating Thoughtfully Designed
             Spaces
           </motion.h1>
 
           <motion.div
-            className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row"
+            className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -120,6 +132,17 @@ export default function HomeBanner() {
                 Explore Services
               </motion.button>
             </Link>
+
+            {/* Sound Button */}
+            <motion.button
+              onClick={toggleSound}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label={isMuted ? "Unmute Video" : "Mute Video"}
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-md"
+            >
+              {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+            </motion.button>
           </motion.div>
         </div>
       </div>

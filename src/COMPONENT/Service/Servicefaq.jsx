@@ -3,11 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { FaPlus, FaMinus, FaQuestionCircle } from "react-icons/fa";
 
-/* ================= LOGO ================= */
-import logo from "../../assets/logo.png";
-
 export default function ServiceFAQ() {
-  // No FAQ open by default
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
@@ -119,70 +115,6 @@ export default function ServiceFAQ() {
           }}
         />
       </div>
-
-      {/* ====================================================== */}
-      {/* FLOATING LOGO */}
-      {/* ====================================================== */}
-      <motion.div
-        animate={{
-          y: [0, -25, 0],
-        }}
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="
-    absolute
-    left-2
-    top-4
-    z-20
-
-    sm:left-4
-    sm:top-8
-
-    md:left-6
-    md:top-10
-
-    lg:left-[4%]
-    lg:top-[12%]
-  "
-      >
-        <div
-          className="
-      flex items-center justify-center
-
-      h-12 w-12
-      sm:h-16 sm:w-16
-      md:h-20 md:w-20
-      lg:h-28 lg:w-28
-
-      rounded-xl
-      sm:rounded-2xl
-      lg:rounded-3xl
-
-      border border-[rgba(1,101,63,0.10)]
-
-      bg-white/95
-      backdrop-blur-xl
-
-      shadow-[0_15px_40px_rgba(0,0,0,0.08)]
-    "
-        >
-          <img
-            src={logo}
-            alt="logo"
-            className="
-        object-contain
-
-        h-8 w-8
-        sm:h-10 sm:w-10
-        md:h-12 md:w-12
-        lg:h-20 lg:w-20
-      "
-          />
-        </div>
-      </motion.div>
 
       {/* ====================================================== */}
       {/* CONTENT */}
