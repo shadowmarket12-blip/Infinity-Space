@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import bgImage from "../../assets/breadcrumb background imager/about page bread crumb background image.png";
+import bgImage from "../../assets/breadcrumb background imager/about page bread crumb background image.webp";
 
 export default function BlogHeroSection() {
   return (
@@ -10,6 +10,7 @@ export default function BlogHeroSection() {
         <img
           src={bgImage}
           alt="Blog Background"
+          loading="lazy"
           className="h-full w-full object-cover"
         />
 

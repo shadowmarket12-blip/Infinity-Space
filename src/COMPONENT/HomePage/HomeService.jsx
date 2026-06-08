@@ -1,13 +1,11 @@
-
-
 import { motion } from "framer-motion";
 
-import residentialImg from "../../assets/Residential Interior Design.png";
-import kitchenImg from "../../assets/Modular Kitchen Interiors.png";
-import commercialImg from "../../assets/Commercial & Office Interiors.png";
-import furnitureImg from "../../assets/Customized Furniture Solutions.png";
-import ceilingImg from "../../assets/False Ceiling & Decorative Design.png";
-import turnkeyImg from "../../assets/Turnkey Interior Solutions.png";
+import residentialImg from "../../assets/Residential Interior Design.webp";
+import kitchenImg from "../../assets/Modular Kitchen Interiors.webp";
+import commercialImg from "../../assets/Commercial & Office Interiors.webp";
+import furnitureImg from "../../assets/Customized Furniture Solutions.webp";
+import ceilingImg from "../../assets/False Ceiling & Decorative Design.webp";
+import turnkeyImg from "../../assets/Turnkey Interior Solutions.webp";
 
 /* ===================================================== */
 /* DATA */
@@ -16,6 +14,7 @@ import turnkeyImg from "../../assets/Turnkey Interior Solutions.png";
 const services = [
   {
     title: "Residential Interior Design",
+    loading: "lazy",
 
     image: residentialImg,
 
@@ -34,6 +33,7 @@ const services = [
 
   {
     title: "Modular Kitchen Interiors",
+    loading: "lazy",
 
     image: kitchenImg,
 
@@ -52,7 +52,7 @@ const services = [
 
   {
     title: "Commercial & Office Interiors",
-
+    loading: "lazy",
     image: commercialImg,
 
     description:
@@ -70,7 +70,7 @@ const services = [
 
   {
     title: "Customized Furniture Solutions",
-
+    loading: "lazy",
     image: furnitureImg,
 
     description:
@@ -88,7 +88,7 @@ const services = [
 
   {
     title: "False Ceiling & Decorative Design",
-
+    loading: "lazy",
     image: ceilingImg,
 
     description:
@@ -106,7 +106,7 @@ const services = [
 
   {
     title: "Turnkey Interior Solutions",
-
+    loading: "lazy",
     image: turnkeyImg,
 
     description:

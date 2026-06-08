@@ -7,11 +7,11 @@ import {
   useMotionValue,
 } from "framer-motion";
 
-import img1 from "../../assets/about page service section/Residential Interior Design.png";
-import img2 from "../../assets/about page service section/Modular Kitchen Design.png";
-import img4 from "../../assets/about page service section/Commercial Interior Design.png";
-import img5 from "../../assets/about page service section/Turnkey Interior.png";
-import img6 from "../../assets/about page service section/Customized Furniture.png";
+import img1 from "../../assets/about page service section/Residential Interior Design.webp";
+import img2 from "../../assets/about page service section/Modular Kitchen Design.webp";
+import img4 from "../../assets/about page service section/Commercial Interior Design.webp";
+import img5 from "../../assets/about page service section/Turnkey Interior.webp";
+import img6 from "../../assets/about page service section/Customized Furniture.webp";
 
 export default function ServicesShowcase() {
   const sectionRef = useRef(null);
@@ -46,26 +46,31 @@ export default function ServicesShowcase() {
   const cards = [
     {
       image: img1,
+      loading: "lazy",
       title: "Residential Interior",
       description: "Elegant home interiors crafted for modern living.",
     },
     {
       image: img2,
+      loading: "lazy",
       title: "Modular Kitchen",
       description: "Smart kitchens with functionality and style.",
     },
     {
       image: img4,
+      loading: "lazy",
       title: "Office Interior",
       description: "Professional and productive workspaces.",
     },
     {
       image: img5,
+      loading: "lazy",
       title: "Living Room",
       description: "Beautiful spaces for family and entertainment.",
     },
     {
       image: img6,
+      loading: "lazy",
       title: "Custom Furniture",
       description: "Tailor-made furniture solutions for every room.",
     },

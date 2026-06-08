@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import bgImage from "../../assets/breadcrumb background imager/about page bread crumb background image.png";
+import bgImage from "../../assets/breadcrumb background imager/about page bread crumb background image.webp";
 
 export default function ProjectsHeroSection() {
   return (

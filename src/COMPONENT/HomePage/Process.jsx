@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { FaArrowRightLong, FaArrowDownLong } from "react-icons/fa6";
 
-import processBg from "../../assets/processbg.png";
+import processBg from "../../assets/processbg.webp";
 import video1 from "../../assets/home page process section/Consultation & Requirement Analysis.mp4";
 import video2 from "../../assets/home page process section/Space Planning & 3D Visualization.mp4";
 import video3 from "../../assets/home page process section/Material Selection & Budget Planning.mp4";

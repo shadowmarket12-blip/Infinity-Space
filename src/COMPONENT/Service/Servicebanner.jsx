@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import bgImage from "../../assets/breadcrumb background imager/service page bread crumb background image.png";
+import bgImage from "../../assets/breadcrumb background imager/service page bread crumb background image.webp";
 
 import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";

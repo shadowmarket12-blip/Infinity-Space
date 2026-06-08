@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import residentialImg from "../../assets/service page service section/Residential Interior Design.png";
-import kitchenImg from "../../assets/service page service section/Modular Kitchen Interiors.png";
-import commercialImg from "../../assets/service page service section/Commercial & Office Interiors.png";
-import furnitureImg from "../../assets/service page service section/Customized Furniture Solutions.png";
-import ceilingImg from "../../assets/service page service section/False Ceiling & Decorative Design.png";
-import turnkeyImg from "../../assets/service page service section/Turnkey Interior Solutions.png";
+import residentialImg from "../../assets/service page service section/Residential Interior Design.webp";
+import kitchenImg from "../../assets/service page service section/Modular Kitchen Interiors.webp";
+import commercialImg from "../../assets/service page service section/Commercial & Office Interiors.webp";
+import furnitureImg from "../../assets/service page service section/Customized Furniture Solutions.webp";
+import ceilingImg from "../../assets/service page service section/False Ceiling & Decorative Design.webp";
+import turnkeyImg from "../../assets/service page service section/Turnkey Interior Solutions.webp";
 
 import { FaArrowRight, FaCheck } from "react-icons/fa";
 

@@ -18,12 +18,12 @@ import {
 // ================= IMAGES =================
 
 import img1 from "../../assets/ser2.webp";
-import img2 from "../../assets/service1.jpg";
+import img2 from "../../assets/service1.webp";
 import img3 from "../../assets/ser2.webp";
 
-import img4 from "../../assets/service1.jpg";
+import img4 from "../../assets/service1.webp";
 import img5 from "../../assets/ser2.webp";
-import img6 from "../../assets/service1.jpg";
+import img6 from "../../assets/service1.webp";
 
 // ================= VIDEO =================
 

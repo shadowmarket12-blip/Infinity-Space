@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bgImage from "../../assets/home page showcase background image.png";
+import bgImage from "../../assets/home page showcase background image.webp";
 import promoVideo from "../../assets/v1.mp4";
 import { Link } from "react-router-dom";
 // import PromoVideoSection from "./PromoVideo";

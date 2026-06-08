@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 
-import stepImage from "../../assets/servicebanner.jpg";
+import stepImage from "../../assets/servicebanner.webp";
 
 import gif1 from "../../assets/homepage paragraph/0.gif";
 import gif2 from "../../assets/homepage paragraph/9eac272a-1162-11ee-b65d-d3c5a527e923.gif";

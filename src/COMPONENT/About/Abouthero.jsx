@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import bgImage from "../../assets/breadcrumb background imager/about page bread crumb background image.png";
+import bgImage from "../../assets/breadcrumb background imager/about page bread crumb background image.webp";
 
 import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ export default function AboutHeroSection() {
         <img
           src={bgImage}
           alt="About Background"
-          // loading="lazy"
+          loading="lazy"
           className="h-full w-full object-cover"
           loading="lazy"
         />
