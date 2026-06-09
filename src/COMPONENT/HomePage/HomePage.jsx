@@ -71,8 +71,41 @@ function HomePage() {
         />
         <meta property="og:type" content="website" />
 
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Infinity Space",
+            url: "https://infinityspaceodisha.com",
+            logo: "https://infinityspaceodisha.com/logo.png",
+            image: "https://infinityspaceodisha.com/logo.png",
+            description:
+              "Infinity Space provides residential and commercial interior design services in Bhubaneswar, Cuttack, and Khordha.",
+            telephone: "+91-7077797720",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "FA 1/63, Barabhuja Market Complex, Khandagiri",
+              addressLocality: "Bhubaneswar",
+              addressRegion: "Odisha",
+              postalCode: "751030",
+              addressCountry: "IN",
+            },
+            areaServed: ["Bhubaneswar", "Cuttack", "Khordha"],
+            sameAs: [
+              "https://www.facebook.com/profile.php?id=61587564103214",
+              "https://www.instagram.com/infinityspace.co/",
+              "https://share.google/8pVAVX8LUqbzVwBlB",
+              "https://www.youtube.com/@InfinitySpaceOfficial",
+              "https://www.linkedin.com/company/infinity-space-odisha/?viewAsMember=true",
+              "https://x.com/InfinitySpaceCo",
+              "https://in.pinterest.com/infinityspaceodisha/",
+            ],
+          })}
+        </script>
+
         {/* Canonical */}
         <link rel="canonical" href="https://www.infinityspaceodisha.com/" />
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
