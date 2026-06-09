@@ -104,7 +104,7 @@ function HomePage() {
         </script>
 
         {/* Canonical */}
-        <link rel="canonical" href="https://www.infinityspaceodisha.com/" />
+        <link rel="canonical" href="https://infinityspaceodisha.com/" />
 
         <script type="application/ld+json">
           {JSON.stringify({
