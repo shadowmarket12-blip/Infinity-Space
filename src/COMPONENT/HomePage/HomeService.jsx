@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 
-import residentialImg from "../../assets/Residential Interior Design.webp";
-import kitchenImg from "../../assets/Modular Kitchen Interiors.webp";
-import commercialImg from "../../assets/Commercial & Office Interiors.webp";
-import furnitureImg from "../../assets/Customized Furniture Solutions.webp";
-import ceilingImg from "../../assets/False Ceiling & Decorative Design.webp";
-import turnkeyImg from "../../assets/Turnkey Interior Solutions.webp";
+// import residentialImg from "../../assets/Residential Interior Design.webp";
+// import kitchenImg from "../../assets/Modular Kitchen Interiors.webp";
+// import commercialImg from "../../assets/Commercial & Office Interiors.webp";
+// import furnitureImg from "../../assets/Customized Furniture Solutions.webp";
+// import ceilingImg from "../../assets/False Ceiling & Decorative Design.webp";
+// import turnkeyImg from "../../assets/Turnkey Interior Solutions.webp";
 
 /* ===================================================== */
 /* DATA */
@@ -16,7 +16,7 @@ const services = [
     title: "Residential Interior Design",
     loading: "lazy",
 
-    image: residentialImg,
+    image: "/images/Residential Interior Design.webp",
 
     description:
       "We create elegant and functional residential interiors designed for comfort, aesthetics, smart storage, and modern living.",
@@ -35,7 +35,7 @@ const services = [
     title: "Modular Kitchen Interiors",
     loading: "lazy",
 
-    image: kitchenImg,
+    image: "/images/Modular Kitchen Interiors.webp",
 
     description:
       "Our modular kitchen interiors combine efficient layouts, premium finishes, and optimized storage solutions for contemporary homes.",
@@ -53,7 +53,7 @@ const services = [
   {
     title: "Commercial & Office Interiors",
     loading: "lazy",
-    image: commercialImg,
+    image: "/images/Commercial & Office Interiors.webp",
 
     description:
       "We design productive and visually appealing commercial interiors focused on functionality, branding, and modern workspace concepts.",
@@ -71,7 +71,7 @@ const services = [
   {
     title: "Customized Furniture Solutions",
     loading: "lazy",
-    image: furnitureImg,
+    image: "/images/Customized Furniture Solutions.webp",
 
     description:
       "Customized furniture solutions designed according to your interior style, storage needs, and space requirements.",
@@ -89,7 +89,7 @@ const services = [
   {
     title: "False Ceiling & Decorative Design",
     loading: "lazy",
-    image: ceilingImg,
+    image: "/images/False Ceiling & Decorative Design.webp",
 
     description:
       "Enhance your interiors with modern ceiling concepts, decorative lighting, elegant wall finishes, and contemporary decorative elements.",
@@ -107,7 +107,7 @@ const services = [
   {
     title: "Turnkey Interior Solutions",
     loading: "lazy",
-    image: turnkeyImg,
+    image: "/images/Turnkey Interior Solutions.webp",
 
     description:
       "Complete turnkey interior solutions covering design, planning, execution, installation, and finishing under one roof.",
@@ -135,7 +135,7 @@ export default function InteriorServicesSection() {
       {/* CONTAINER */}
       {/* ===================================================== */}
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <motion.div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ===================================================== */}
         {/* HEADING */}
         {/* ===================================================== */}
@@ -185,15 +185,16 @@ export default function InteriorServicesSection() {
               key={index}
               initial={{
                 opacity: 0,
-                y: 80,
+                // y: 80,
               }}
               whileInView={{
                 opacity: 1,
-                y: 0,
+                // y: 0,
               }}
               transition={{
-                duration: 0.8,
-                delay: index * 0.08,
+                // duration: 0.8,
+                duration: 0.4,
+                // delay: index * 0.08,
               }}
               viewport={{
                 once: true,
@@ -234,7 +235,8 @@ export default function InteriorServicesSection() {
                 {/* IMAGE */}
 
                 <img
-                  loading="lazy"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchpriority={index === 0 ? "high" : "auto"}
                   src={service.image}
                   alt={service.title}
                   className="
@@ -341,26 +343,45 @@ export default function InteriorServicesSection() {
                   "
                 >
                   {service.points.map((point, i) => (
-                    <motion.div
+                    // <div
+                    //   key={i}
+                    //   whileHover={{
+                    //     x: 5,
+                    //   }}
+                    //   className="
+                    //     flex
+                    //     items-center
+                    //     gap-3
+                    //     rounded-2xl
+                    //     border
+                    //     border-black/5
+                    //     bg-[#fafafa]
+                    //     px-4
+                    //     py-4
+                    //     transition-all
+                    //     duration-300
+                    //     hover:border-[rgba(1,101,63,0.18)]
+                    //     hover:bg-[rgba(1,101,63,0.03)]
+                    //   "
+                    // >
+                    <div
                       key={i}
-                      whileHover={{
-                        x: 5,
-                      }}
                       className="
-                        flex
-                        items-center
-                        gap-3
-                        rounded-2xl
-                        border
-                        border-black/5
-                        bg-[#fafafa]
-                        px-4
-                        py-4
-                        transition-all
-                        duration-300
-                        hover:border-[rgba(1,101,63,0.18)]
-                        hover:bg-[rgba(1,101,63,0.03)]
-                      "
+    flex
+    items-center
+    gap-3
+    rounded-2xl
+    border
+    border-black/5
+    bg-[#fafafa]
+    px-4
+    py-4
+    transition-all
+    duration-300
+    hover:translate-x-1
+    hover:border-[rgba(1,101,63,0.18)]
+    hover:bg-[rgba(1,101,63,0.03)]
+  "
                     >
                       {/* ICON */}
 
@@ -392,7 +413,7 @@ export default function InteriorServicesSection() {
                       >
                         {point}
                       </p>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
 
@@ -415,7 +436,7 @@ export default function InteriorServicesSection() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
