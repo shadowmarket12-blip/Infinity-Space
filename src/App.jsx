@@ -1,19 +1,25 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+
 import Navbar from "./COMPONENT/Navbar/Navbar";
-import HomePage from "./COMPONENT/HomePage/HomePage";
-import AboutPage from "./COMPONENT/About/About";
-import ServicePage from "./COMPONENT/Service/Service";
 import ScrollToTop from "./COMPONENT/ScrollTop";
 import FloatingContactButtons from "./COMPONENT/Button";
-import TermsConditions from "./COMPONENT/TermsCondition/TermsCondition";
-import PrivacyPolicy from "./COMPONENT/PrivacyPolicy/PrivacyPolicy";
-import BlogPage from "./COMPONENT/BlogPage/BlogPage";
-import ProjectsPage from "./COMPONENT/Projects/Projects";
-import ContactSection from "./COMPONENT/Contactus/ContactUs";
 import Footer from "./COMPONENT/Footer/Footer";
-import { Suspense } from "react";
+
+// Lazy Loaded Pages
+const HomePage = lazy(() => import("./COMPONENT/HomePage/HomePage"));
+const AboutPage = lazy(() => import("./COMPONENT/About/About"));
+const ServicePage = lazy(() => import("./COMPONENT/Service/Service"));
+const BlogPage = lazy(() => import("./COMPONENT/BlogPage/BlogPage"));
+const ProjectsPage = lazy(() => import("./COMPONENT/Projects/Projects"));
+const ContactSection = lazy(() => import("./COMPONENT/Contactus/ContactUs"));
+const TermsConditions = lazy(
+  () => import("./COMPONENT/TermsCondition/TermsCondition"),
+);
+const PrivacyPolicy = lazy(
+  () => import("./COMPONENT/PrivacyPolicy/PrivacyPolicy"),
+);
 
 function App() {
   return (
@@ -21,7 +27,22 @@ function App() {
       <ScrollToTop />
       <FloatingContactButtons />
       <Navbar />
-      <Suspense fallback={<div>Loading...</div>}>
+
+      <Suspense
+        fallback={
+          <div
+            style={{
+              minHeight: "100vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "18px",
+            }}
+          >
+            Loading...
+          </div>
+        }
+      >
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutPage />} />

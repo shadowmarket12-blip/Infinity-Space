@@ -180,7 +180,7 @@ export default function Footer() {
             <h4 className="text-xl font-bold tracking-wide">Office</h4>
 
             <div className="mt-5 space-y-3 text-sm text-white/80">
-              <p>Barabhuja market complex, FA 1/63, Khandagiri, </p>
+              <p>FA 1/63, Barabhuja market complex, Khandagiri </p>
 
               <p>Bhubaneswar,Odisha 751030</p>
 
