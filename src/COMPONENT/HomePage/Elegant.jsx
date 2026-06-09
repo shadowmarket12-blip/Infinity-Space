@@ -3,9 +3,9 @@ import { FaArrowRight } from "react-icons/fa";
 
 import stepImage from "../../assets/servicebanner.webp";
 
-import gif1 from "../../assets/homepage paragraph/0.gif";
-import gif2 from "../../assets/homepage paragraph/9eac272a-1162-11ee-b65d-d3c5a527e923.gif";
-import gif3 from "../../assets/homepage paragraph/895e95b0-1162-11ee-9317-2f9e8a1cb08e.gif";
+// import gif1 from "../../assets/homepage paragraph/0.gif";
+// import gif2 from "../../assets/homepage paragraph/9eac272a-1162-11ee-b65d-d3c5a527e923.gif";
+// import gif3 from "../../assets/homepage paragraph/895e95b0-1162-11ee-9317-2f9e8a1cb08e.gif";
 import { Link } from "react-router-dom";
 
 // =====================================================
@@ -14,21 +14,21 @@ import { Link } from "react-router-dom";
 
 const steps = [
   {
-    gif: gif1,
+    video: "/videos/0.mp4",
 
     description:
       "At Infinity Space, we believe interiors should feel comfortable, visually refined, and functional for everyday living. As experienced interior designers in Bhubaneswar, we create thoughtfully planned spaces that balance modern aesthetics, efficient layouts, smart storage, and personalized detailing.",
   },
 
   {
-    gif: gif2,
+    video: "/videos/9eac272a-1162-11ee-b65d-d3c5a527e923.mp4",
 
     description:
       "We provide complete interior design and execution services for apartments, villas, offices, retail spaces, restaurants, clinics, and commercial properties. From concept planning and 3D visualization to material selection and final execution, our team manages every stage with professional coordination and attention to detail.",
   },
 
   {
-    gif: gif3,
+    video: "/videos/895e95b0-1162-11ee-9317-2f9e8a1cb08e.mp4",
 
     description:
       "Whether you are planning luxury home interiors, modular kitchen design, office setup interiors, wardrobe solutions, or customized furniture concepts, our goal is to create interiors that match your lifestyle, functionality requirements, and design preferences.",
@@ -303,9 +303,10 @@ export default function ElegantHome() {
 
               <div className="overflow-hidden rounded-[26px]">
                 <img
-                  loading="lazy"
                   src={stepImage}
                   alt="Interior Design"
+                  loading="eager"
+                  fetchpriority="high"
                   className="
                     h-[280px]
                     w-full
@@ -415,20 +416,24 @@ export default function ElegantHome() {
                 }}
                 className="relative z-10 mx-auto flex justify-center"
               >
-                <img
-                  src={item.gif}
-                  alt="Premium Interior Design"
+                <video
+                  src={item.video}
+                  loading="lazy"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="none"
                   className="
-      h-20
-      w-20
-      rounded-full
-      object-cover
-      border-2 border-green-600/40
-      shadow-md
-
-      sm:h-24
-      sm:w-24
-    "
+    h-20
+    w-20
+    rounded-full
+    object-cover
+    border-2 border-green-600/40
+    shadow-md
+    sm:h-24
+    sm:w-24
+  "
                 />
               </motion.div>
 
