@@ -37,7 +37,7 @@ export default function AboutPage() {
         {/* Canonical */}
         <link
           rel="canonical"
-          href=" https://infinityspaceodisha.com/about-us"
+          href="https://infinityspaceodisha.com/about-us"
         />
 
         <script type="application/ld+json">
