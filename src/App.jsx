@@ -40,7 +40,7 @@ function App() {
               fontSize: "18px",
             }}
           >
-            Loading...
+            Infinity Space😎
           </div>
         }
       >
