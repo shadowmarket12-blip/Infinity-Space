@@ -1,0 +1,34 @@
+.loader {
+  perspective: 700px;
+}
+
+.loader-letter {
+  display: inline-block;
+  font-size: 70px;
+  font-weight: 900;
+  transform-origin: 0 70%;
+  transform-style: preserve-3d;
+  animation: flip 2.5s linear infinite;
+}
+
+@keyframes flip {
+  35% {
+    transform: rotateX(360deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .loader-letter {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loader-letter {
+    font-size: 26px;
+  }
+}
