@@ -27,6 +27,7 @@ export default function Navbar() {
     },
     {
       name: "Services",
+<<<<<<< HEAD
       path: "/services/overview",
       dropdown: [
         { name: "Overview", path: "/services/overview" },
@@ -34,6 +35,11 @@ export default function Navbar() {
           name: "Residential Interior Design",
           path: "/services/residential-interior-design",
         },
+=======
+      path: "/services",
+      dropdown: [
+        { name: "Residential Interior Design", path: "/services" },
+>>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
         { name: "Living Room Interior Design", path: "/services" },
         { name: "Bedroom Interior Design", path: "/services" },
         { name: "Modular Kitchen Design", path: "/services" },
@@ -208,7 +214,11 @@ export default function Navbar() {
                           ${
                             isActive || dropdownOpen
                               ? "bg-green-50 text-green-700"
+<<<<<<< HEAD
                               : "text-gray-700 hover:font-bold"
+=======
+                              : "text-gray-700 hover:bg-black/[0.04]"
+>>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
                           }
                         `}
                       >
@@ -282,11 +292,21 @@ export default function Navbar() {
                                     rounded-xl
                                     text-sm
                                     text-gray-700
+<<<<<<< HEAD
                                     font-medium
                                     transition-all
                                     duration-300
                                     hover:font-bold
                                     hover:text-green-700
+=======
+                                    transition-all
+                                    duration-300
+                                    hover:bg-gradient-to-r
+                                    hover:from-green-50
+                                    hover:to-emerald-50
+                                    hover:text-green-700
+                                    hover:shadow-sm
+>>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
                                   "
                                 >
                                   <span className="flex-1">{item.name}</span>
@@ -302,6 +322,25 @@ export default function Navbar() {
                                     "
                                     size={14}
                                   />
+<<<<<<< HEAD
+=======
+                                  {/* Hover underline effect */}
+                                  <span
+                                    className="
+                                    absolute
+                                    bottom-0
+                                    left-0
+                                    w-0
+                                    h-0.5
+                                    bg-gradient-to-r
+                                    from-green-500
+                                    to-emerald-500
+                                    transition-all
+                                    duration-300
+                                    group-hover:w-full
+                                  "
+                                  />
+>>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
                                 </Link>
                               ))}
                             </div>
@@ -335,7 +374,11 @@ export default function Navbar() {
                       ${
                         isActive
                           ? "bg-green-50 text-green-700"
+<<<<<<< HEAD
                           : "text-gray-700 hover:font-bold"
+=======
+                          : "text-gray-700 hover:bg-black/[0.04]"
+>>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
                       }
                     `}
                   >

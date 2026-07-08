@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 
+<<<<<<< HEAD
 import bgImage from "../../../public/images/aboutus.webp";
+=======
+import bgImage from "../../assets/breadcrumb background imager/about page bread crumb background image.webp";
+>>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
 
 import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
