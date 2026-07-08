@@ -155,11 +155,7 @@ export default function Footer() {
               {[
                 { name: "Home", path: "/" },
                 { name: "About Us", path: "/about-us" },
-<<<<<<< HEAD
                 { name: "Services", path: "/services/overview" },
-=======
-                { name: "Services", path: "/services" },
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
                 { name: "Projects", path: "/projects" },
                 { name: "Blogs", path: "/blogs" },
                 { name: "Contact", path: "/contact" },
@@ -189,19 +185,10 @@ export default function Footer() {
             <div className="mt-5 space-y-3 text-sm text-white/80">
               <p className="flex items-start gap-3">
                 <FaMapMarkerAlt className="mt-1 flex-shrink-0 text-green-300" />
-<<<<<<< HEAD
                 <span>
                   FA 1/63, Barabhuja market complex, Khandagiri, Bhubaneswar,
                   Odisha 751030
                 </span>
-=======
-                <span>FA 1/63, Barabhuja market complex, Khandagiri</span>
-              </p>
-
-              <p className="flex items-start gap-3">
-                <FaMapMarkerAlt className="mt-1 flex-shrink-0 text-green-300" />
-                <span>Bhubaneswar, Odisha 751030</span>
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
               </p>
 
               <p className="flex items-center gap-3">

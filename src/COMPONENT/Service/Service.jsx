@@ -36,14 +36,10 @@ function ServicePage() {
         <meta property="og:type" content="website" />
 
         {/* Canonical */}
-<<<<<<< HEAD
         <link
           rel="canonical"
           href="https://infinityspaceodisha.com/services/overview"
         />
-=======
-        <link rel="canonical" href="https://infinityspaceodisha.com/services" />
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
 
         {/* ✅ FULL FAQ SCHEMA */}
         <script type="application/ld+json">

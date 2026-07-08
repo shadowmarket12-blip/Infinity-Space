@@ -77,11 +77,7 @@ export default function InteriorExpertiseSection() {
 
           <p className="tex-black mt-10">
             Infinity Space is a{" "}
-<<<<<<< HEAD
             <Link to="/about-us" className="font-bold">
-=======
-            <Link to="/about-us">
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
               {" "}
               trusted interior design company in Bhubaneswar
             </Link>{" "}
@@ -89,11 +85,7 @@ export default function InteriorExpertiseSection() {
             solutions that combine aesthetics, comfort, and functionality. From
             modular kitchens and luxury living rooms to office interiors,
             wardrobe designs,{" "}
-<<<<<<< HEAD
             <Link to="/services" className="font-bold">
-=======
-            <Link to="/services">
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
               TV units , false ceiling concepts, and turnkey execution{" "}
             </Link>{" "}
             , every space is designed with attention to detail and practical
@@ -102,16 +94,11 @@ export default function InteriorExpertiseSection() {
 
           <p className="tex-black mt-10">
             Our experienced{" "}
-<<<<<<< HEAD
             <Link to="/about-us" className="font-bold">
               {" "}
               interior designers in Bhubaneswar
             </Link>{" "}
             focus on smart space planning, premium finishes, modern layouts, and
-=======
-            <Link to="/about-us"> interior designers in Bhubaneswar</Link> focus
-            on smart space planning, premium finishes, modern layouts, and
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
             organized execution to create interiors that reflect your lifestyle
             and everyday needs. We proudly serve homeowners and businesses
             across Bhubaneswar, Cuttack, and Khordha with personalized interior

@@ -135,13 +135,6 @@ const services = [
 export default function MyService() {
   return (
     <section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28">
-<<<<<<< HEAD
-=======
-      {/* ===================================================== */}
-      {/* BACKGROUND */}
-      {/* ===================================================== */}
-
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute left-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-[rgba(1,101,63,0.07)] blur-[120px]" />
 

@@ -118,11 +118,8 @@ export default function ServiceHeroSection() {
             <FiChevronRight className="text-sm" />
 
             <span className="text-white/70">Services</span>
-<<<<<<< HEAD
             <FiChevronRight className="text-sm" />
             <span className="text-white/70">Overview</span>
-=======
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
           </motion.div>
 
           {/* HEADING */}

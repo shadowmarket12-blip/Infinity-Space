@@ -8,7 +8,7 @@ import FloatingContactButtons from "./COMPONENT/Button";
 import Footer from "./COMPONENT/Footer/Footer";
 import ScrollToHash from "./Scrolltohash";
 import Loading from "../Loading";
-<<<<<<< HEAD
+
 const ResidentialPage = lazy(
   () => import("./COMPONENT/DropdownServices/ResidentialPage"),
 );
@@ -16,9 +16,7 @@ const ResidentialPage = lazy(
 const BlogDetailPage = lazy(
   () => import("./COMPONENT/BlogPage/BlogDetailPage"),
 );
-=======
 
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
 const HomePage = lazy(() => import("./COMPONENT/HomePage/HomePage"));
 const AboutPage = lazy(() => import("./COMPONENT/About/About"));
 const ServicePage = lazy(() => import("./COMPONENT/Service/Service"));
@@ -33,7 +31,6 @@ const PrivacyPolicy = lazy(
 );
 
 function App() {
-<<<<<<< HEAD
   // const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
@@ -47,21 +44,6 @@ function App() {
   // if (loading) {
   //   return <Loading />;
   // }
-=======
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1800);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loading />;
-  }
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
 
   return (
     <>
@@ -69,7 +51,6 @@ function App() {
       <FloatingContactButtons />
       <Navbar />
 
-<<<<<<< HEAD
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -87,21 +68,6 @@ function App() {
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
       {/* <Suspense fallback={<Loading />}></Suspense> */}
-=======
-      <Suspense fallback={<Loading />}>
-        <ScrollToHash />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about-us" element={<AboutPage />} />
-          <Route path="/services" element={<ServicePage />} />
-          <Route path="/blogs" element={<BlogPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactSection />} />
-          <Route path="/terms" element={<TermsConditions />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-        </Routes>
-      </Suspense>
->>>>>>> 17e1716b10508daff9bbef293e492d074337b95c
 
       <Footer />
     </>
